@@ -800,7 +800,6 @@ h1,h2,h3,p{
     font: 500 clamp(24px, 3vw, 46px)/1.12 var(--serif);
 }
 
-/* DONATION SECTION */
 
 .donate {
     padding-top: 125px;
@@ -1159,7 +1158,6 @@ h1,h2,h3,p{
     color: #7b6b60;
 }
 
-/* SCROLL ANIMATIONS */
 
 [data-reveal] {
     opacity: 0;
@@ -1177,6 +1175,94 @@ h1,h2,h3,p{
 [data-reveal] {
     opacity: 1;
     transform: none;
+}
+
+.site-footer {
+    background: #492B1C;
+    color: #F4EBDD;
+    padding: 90px clamp(24px, 6vw, 110px) 30px;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-kicker {
+    font-size: 12px;
+    letter-spacing: .15em;
+    color: #E7B77F;
+    margin-bottom: 25px;
+}
+
+.footer-intro h2 {
+    font-family: var(--serif);
+    font-size: clamp(42px, 5vw, 76px);
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.footer-intro > p:last-child {
+    max-width: 380px;
+    line-height: 1.8;
+    color: #E0D3C3;
+}
+
+.footer-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding-top: 15px;
+}
+
+.footer-navigation h3 {
+    font-size: 12px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #E7B77F;
+    margin-bottom: 25px;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-navigation li {
+    margin-bottom: 16px;
+}
+
+.footer-navigation a {
+    color: #F4EBDD;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color .2s ease;
+}
+
+.footer-navigation a:hover {
+    color: #E7B77F;
+}
+
+.footer-navigation a:focus-visible {
+    outline: 2px solid #E7B77F;
+    outline-offset: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #806655;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #D8C6B5;
 }
 
 
@@ -1326,6 +1412,27 @@ h1,h2,h3,p{
 
     .footer-grid {
         gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding-top: 65px;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-navigation {
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
