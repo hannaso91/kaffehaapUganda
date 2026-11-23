@@ -1213,9 +1213,23 @@ h1,h2,h3,p{
 
 .footer-navigation {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 45px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
     padding-top: 15px;
+}
+
+.footer-navigation address {
+    font-style: normal;
+}
+
+.footer-navigation address a {
+    overflow-wrap: anywhere;
+}
+
+.footer-navigation address p {
+    font-size: 13px;
+    margin-top: 16px;
+    color: #D8C6B5;
 }
 
 .footer-navigation h3 {
@@ -1412,6 +1426,10 @@ h1,h2,h3,p{
 
     .footer-grid {
         gap: 30px;
+    }
+
+    .footer-navigation {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -1706,6 +1724,11 @@ h1,h2,h3,p{
 
     .footer-bottom > span:nth-child(2) {
         display: none;
+    }
+
+    .footer-navigation {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 
