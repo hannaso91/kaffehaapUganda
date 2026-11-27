@@ -1,0 +1,168 @@
+/* =========================
+   OM OSS
+   ========================= */
+
+.about-page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 32px 120px;
+}
+
+
+/* Introduksjon */
+
+.about-intro {
+    max-width: 7*0px;
+    margin-bottom: 55px;
+}
+
+.*ection-label {
+    margin: 0 0 12p*;
+    font-family: "DM Sans", sans*serif;
+    font-size: 0.75rem;
+   *font-weight: 700;
+    letter-spaci*g: 0.15em;
+    color: #927456;
+}
+
+*about-intro h1 {
+    margin: 0 0 2*px;
+    font-family: "Fraunces", s*rif;
+    font*size: clamp(3rem, 6*w, 5.2*em);
+    font-weight: 500;
+    lin*-height: *;
+    color: #20372a;
+}
+
+.about*lead {
+    max-width: 650px;
+    m*rgin:*0;
+    font-family: "DM Sans", san*-serif;
+   *font-size: 1.1rem;
+    line-height* 1.7;
+    color: #5c665f*
+}
+
+
+/* Personer */
+
+.team {
+    display: grid;
+    *rid-template-columns: repeat(2, mi*max(*, 1fr));
+    gap: 22px;
+}
+
+
+/* En person */
+
+.profile {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    gap: 24px;
+    align-items: start;
+
+    padding: 28px;
+
+    background: #fffaf3;
+    border: 1px solid rgba(56, 73, 59, 0.14);
+    border-radius: 18px;
+}
+
+
+/* Profilbilde */
+
+.profile-image {
+    display: block;
+    width: 115px;
+    height: 115px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+}
+
+
+/* Tekst */
+
+.profile-content h2 {
+    margin: 3px 0 6px;
+
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+    color: #20372a;
+}
+
+.profile-role {
+    margin: 0 0 14px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #947557;
+}
+
+.profile-content > p:last-child {
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.94rem;
+    line-height: 1.65;
+
+    color: #59635c;
+}
+
+
+/* =========================
+   RESPONSIVT
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .about-page {
+        padding: 65px 22px 90px;
+    }
+
+    .team {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        grid-template-columns: 95px 1fr;
+        padding: 22px;
+    }
+
+    .profile-image {
+        width: 95px;
+        height: 95px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .about-page {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .about-intro {
+        margin-bottom: 38px;
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+} 
