@@ -53,3 +53,5 @@ function updateProgress(){
     const total=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(total>0?Math.min(100,window.scrollY/total*100):0)+'%';ticking=false
 }
 window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateProgress);ticking=true}},{passive:true});updateProgress();
+
+
